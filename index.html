@@ -12,88 +12,158 @@
 <body>
   <!-- Header -->
   <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>A</span>MBITO <span>P</span>LUS</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Strona Główna</a></li>
-            <li><a href="#services" data-after="Service">Produkty</a></li>
-            <li><a href="#projects" data-after="Projects">Producenci</a></li>
-            <li><a href="#about" data-after="About">O Nas</a></li>
-            <li><a href="#order" data-after="Order">Złóż Zamówienie</a></li>
-            <li><a href="#contact" data-after="Contact">Kontakt</a></li>
-          </ul>
-        </div>
+    <div class="header-container">
+      <div class="header-brand">
+        <a href="#hero" class="logo-link">
+          <span class="logo-highlight">A</span>MBITO <span class="logo-highlight">P</span>LUS
+        </a>
       </div>
+      
+      <nav class="header-nav">
+        <button class="mobile-menu-toggle" aria-label="Menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+        
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#elitebox-hero" class="nav-link">Strona Główna</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Produkty</a></li>
+          <li class="nav-item"><a href="#manufacturers" class="nav-link">Producenci</a></li>
+          <li class="nav-item"><a href="#about-us" class="nav-link">O Nas</a></li>
+          <li class="nav-item"><a href="#order-form" class="nav-link">Złóż Zamówienie</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
     </div>
   </section>
   <!-- End Header -->
 
 
   <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Witaj, </h1>
-        <h1>Na naszej </h1>
-        <h1>Stronie</h1>
-        <a href="#about" type="button" class="cta">O nas</a>
+  <section id="elitebox-hero">
+    <div class="elitebox-hero-container">
+      <div class="elitebox-hero-content">
+        <div class="elitebox-hero-text">
+          <div class="new-badge">NOWOŚĆ</div>
+          <h1 class="elitebox-hero-title">SZUFLADA ELITE BOX</h1>
+          <p class="elitebox-hero-subtitle">porządek zaczyna się od szuflad</p>
+          
+          <div class="elitebox-features-grid">
+            <div class="feature-item">
+              <span class="feature-number"> </span>
+              <span class="feature-title">2 kolory - Biały i Antracyt</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-number"> </span>
+              <span class="feature-title">4 wysokości - 87, 116, 167, 199</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-number"> </span>
+              <span class="feature-title">Pełna rozmiarówka od 250mm do 550mm</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-number"> </span>
+              <span class="feature-title">Dostosowana do płyty 18mm</span>
+            </div>
+          </div>
+  
+          <div class="elitebox-brand">
+            <p class="brand-text">Elitebox od AMIX</p>
+            <p class="product-description">
+              Nowoczesna szuflada Elitebox - połączenie doskonałej funkcjonalności i najwyższej jakości wykonania.
+            </p>
+            <ul class="product-features">
+              <li>System cichego domyku z synchronizacją</li>
+              <li>Pełny wysuw</li>
+              <li>Precyzyjna regulacja 3D</li>
+              <li>Dostępne w wielu rozmiarach</li>
+            </ul>
+          </div>
+  
+          <a href="#order" class="cta-button">ZAMÓW TERAZ</a>
+        </div>
       </div>
     </div>
   </section>
+  
   <!-- End Hero Section  -->
 
   
   <!--End promo section-->
 
   <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Prod<span>u</span>kty</h1>
-        <p>Nasza hurtownia oferuje akcesoria renomowanych producentów, najlepszej jakości
-          Akcesoria meblowe.
-          </p>
+  <section id="products">
+    <div class="products-container">
+      <div class="products-header">
+        <h1 class="products-title">NASZE <span>PRODUKTY</span></h1>
+        <p class="products-subtitle">Oferujemy akcesoria meblowe najwyższej jakości od renomowanych producentów</p>
       </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/color/344/drawer.png" /></div>
-          <h2>Systemy szuflad</h2>
-          <p>Zróżnicowane potrzeby klientów wymagają produktów, 
-            które są do nich dostosowane. 
-            W ofercie posiadamy  systemy szuflad firmy Blum oraz Amix, odpowiadające na wszelkie potrzeby i 
-            wymagania w zakresie designu, funkcji czy też montażu.</p>
+  
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="https://img.icons8.com/color/344/drawer.png" alt="Szuflady">
+            <div class="product-badge">Bestseller</div>
+          </div>
+          <div class="product-content">
+            <h3>Systemy szuflad</h3>
+            <p>Kompletne rozwiązania dla wymagających klientów. Oferujemy systemy firm Blum i Amix dopasowane do każdego projektu.</p>
+            <ul class="product-features">
+              <li>Różne style i funkcje</li>
+              <li>Łatwy montaż</li>
+              <li>Nowoczesny design</li>
+            </ul>
+            <!--<a href="#" class="product-link">Zobacz więcej →</a>-->
+          </div>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/344/gear.png" /></div>
-          <h2>Prowadnice</h2>
-          <p> W zależności od potrzeb oferujemy system widocznych lub krytych prowadnic z dużym spektrum długości, rodzajów wysuwu i klas obciążenia od 30 do 100 kg. W przypadku prowadnic TANDEM posiadamy dwa systemy, BLUMOTION i TIP-ON BLUMOTION.</p>
+  
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="https://img.icons8.com/bubbles/344/gear.png" alt="Prowadnice">
+          </div>
+          <div class="product-content">
+            <h3>Prowadnice</h3>
+            <p>Prowadnice widoczne i ukryte o różnej nośności (30-100kg). W systemie TANDEM dostępne wersje BLUMOTION i TIP-ON.</p>
+            <ul class="product-features">
+              <li>Różne klasy obciążenia</li>
+              <li>Płynny wysuw</li>
+              <li>Długie gwarancje</li>
+            </ul>
+            <!--<a href="#" class="product-link">Zobacz więcej →</a>-->
+          </div>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-led-home-improvements-flaticons-flat-flat-icons.png" /></div>
-          <h2>Oświetlenie</h2>
-          <p>Uzyskaj piękne efekty świetlne w domu. 
-            Staje się to coraz prostrze dzięki profilom i taśmą LED 
-            stworzysz przyjemny nastrój w każdym pomieszczeniu.
-          <br>
-          <br>
-          <br>
-          <br>
-        
-        </p>
+  
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-led-home-improvements-flaticons-flat-flat-icons.png" alt="Oświetlenie">
+          </div>
+          <div class="product-content">
+            <h3>Oświetlenie LED</h3>
+            <p>Nowoczesne rozwiązania oświetleniowe do mebli. Profile i taśmy LED tworzące wyjątkowy klimat pomieszczeń.</p>
+            <ul class="product-features">
+              <li>Energooszczędne</li>
+              <li>Regulacja barwy</li>
+              <li>Łatwa instalacja</li>
+            </ul>
+            <!--<a href="#" class="product-link">Zobacz więcej →</a>-->
+          </div>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/external-others-pike-picture/344/external-Hidden-Hinges-doors-others-pike-picture.png" /></div>
-          <h2>System zawiasów</h2>
-          <p>Krótka droga nasuwu gwarantuje prosty montaż frontu do korpusu, a możliwość regulacji w 3 wymiarach pozwala osiągnąć precyzyjny układ szczelin. Zintegrowana blokada wyjęcia dba o to, by drzwi cały czas pozostały bezpiecznie na miejscu.<BR><BR></p>
+  
+        <div class="product-card">
+          <div class="product-icon">
+            <img src="https://img.icons8.com/external-others-pike-picture/344/external-Hidden-Hinges-doors-others-pike-picture.png" alt="Zawiasy">
+          </div>
+          <div class="product-content">
+            <h3>Systemy zawiasów</h3>
+            <p>Precyzyjne zawiasy z 3D regulacją i blokadą wyjęcia. Gwarantują idealne ustawienie frontów meblowych.</p>
+            <ul class="product-features">
+              <li>3D regulacja</li>
+              <li>Zintegrowana blokada</li>
+              <li>Cichy domyk</li>
+            </ul>
+            <!--<a href="#" class="product-link">Zobacz więcej →</a>-->
+          </div>
         </div>
       </div>
     </div>
@@ -101,240 +171,288 @@
   <!-- End Service Section -->
 
   <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title"> <span>Producenci</span></h1>
+  <section id="manufacturers">
+    <div class="manufacturers-container">
+      <div class="section-header">
+        <h2 class="section-title">Nasi <span>Producenci</span></h2>
+        <p class="section-subtitle">Współpracujemy z najlepszymi producentami akcesoriów meblowych</p>
       </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Blum</h1>
-            <p>
-            Naszym celem są wysokiej jakości okucia meblowe, które sprawiają, że mieszka się wygodniej. Produkujemy systemy podnośników, zawiasów i szuflad oraz rozwiązania kieszeniowe do mebli, a naszą ofertę uzupełniają serwisy i pomoce montażowe.
-            </p>
+  
+      <div class="manufacturers-grid">
+        <!-- Producent 1 -->
+        <div class="manufacturer-card">
+          <div class="manufacturer-logo">
+            <img src="./img/blum.jpg" alt="Blum">
+            <div class="logo-overlay"></div>
           </div>
-          <div class="project-img">
-            <img src="./img/blum.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Amix</h1>
-            <p>Szeroka gama produktów a także stała dostępność towaru sprawia iż jesteśmy wiarygodnym i konkurencyjnym kontrahentem. Naszym głównym celem jest zapewnienie odbiorcom towaru najwyższej jakości w stosunkowo niskiej cenie.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/amix.jpg" alt="img">
+          <div class="manufacturer-content">
+            <h3>Blum</h3>
+            <div class="manufacturer-description">
+              <p>Wysokiej jakości okucia meblowe, które sprawiają, że mieszka się wygodniej. Oferujemy systemy podnośników, zawiasów i szuflad oraz rozwiązania kieszeniowe do mebli.</p>
+            </div>
+            <a href="#" class="manufacturer-link">Zobacz produkty →</a>
           </div>
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Design Light</h1>
-            <p>Specjalizujemy się w produkcji oświetlenia do mebli i mieszkań.
-
-              Przedmiotem działalności firmy jest funkcjonalne i energooszczędne oświetlenie LED, w które zaopatrujemy największe hurtownie meblowe w Polsce oraz za granicą, klientów biznesowych, jak i indywidualnych.</p>
+  
+        <!-- Producent 2 -->
+        <div class="manufacturer-card">
+          <div class="manufacturer-logo">
+            <img src="./img/amix.jpg" alt="Amix">
+            <div class="logo-overlay"></div>
           </div>
-          <div class="project-img">
-            <img src="./img/designlight.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Zobal</h1>  
-            <p>Podstawową działalnością naszej firmy jest produkcja wysokiej jakości akcesoriów do mebli z aluminium. W ofercie znajdziecie Państwo ponad dwadzieścia wzorów frontów do mebli z proﬁli aluminiowych uzupełnionych szeroką gamą szkła ornamentowego, kolorowego oraz szkła z graﬁką.
-
-              uchwyty wpuszczane w wielu kształtach i kolorach, które jako jedyni na rynku możemy zaoferować wykonane na wymiar i wykończone jako detal. Paletę nowoczesnych rozwiązań uzupełnia System Ścienny, panel LED, rolety aluminiowe, System Bezuchwytowy w kilku wariantach konstrukcyjnych i funkcjonalnych.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/zobal.jpg" alt="img">
+          <div class="manufacturer-content">
+            <h3>Amix</h3>
+            <div class="manufacturer-description">
+              <p>Szeroka gama produktów i stała dostępność towaru. Zapewniamy produkty najwyższej jakości w konkurencyjnych cenach.</p>
+            </div>
+            <a href="#" class="manufacturer-link">Zobacz produkty →</a>
           </div>
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Hafele</h1>
-            <p>Z nami zrealizujesz każdy projekt. Nieprzerwanie pracujemy nad nowymi rozwiązaniami, a stare ulepszamy. Wszystko po to, by nasi partnerzy mogli realizować swoje pomysły szybciej, wydajniej i bardziej pomysłowo. Nasz wyjątkowy asortyment znajduje się w Wielkim Katalogu Häfele – najważniejszej publikacji rynku okuć od 1971 roku.</p>
+  
+        <!-- Producent 3 -->
+        <div class="manufacturer-card">
+          <div class="manufacturer-logo">
+            <img src="./img/designlight.jpg" alt="Design Light">
+            <div class="logo-overlay"></div>
           </div>
-          <div class="project-img">
-            <img src="./img/hafele.jpg" alt="img">
+          <div class="manufacturer-content">
+            <h3>Design Light</h3>
+            <div class="manufacturer-description">
+              <p>Specjalizujemy się w produkcji funkcjonalnego i energooszczędnego oświetlenia LED do mebli i mieszkań.</p>
+            </div>
+            <a href="#" class="manufacturer-link">Zobacz produkty →</a>
+          </div>
+        </div>
+  
+        <!-- Producent 4 -->
+        <div class="manufacturer-card">
+          <div class="manufacturer-logo">
+            <img src="./img/zobal.jpg" alt="Zobal">
+            <div class="logo-overlay"></div>
+          </div>
+          <div class="manufacturer-content">
+            <h3>Zobal</h3>
+            <div class="manufacturer-description">
+              <p>Produkcja wysokiej jakości akcesoriów do mebli z aluminium. Oferujemy fronty z profili aluminiowych, szkło ornamentowe i nowoczesne systemy meblowe.</p>
+            </div>
+            <a href="#" class="manufacturer-link">Zobacz produkty →</a>
+          </div>
+        </div>
+  
+        <!-- Producent 5 -->
+        <div class="manufacturer-card">
+          <div class="manufacturer-logo">
+            <img src="./img/hafele.jpg" alt="Hafele">
+            <div class="logo-overlay"></div>
+          </div>
+          <div class="manufacturer-content">
+            <h3>Hafele</h3>
+            <div class="manufacturer-description">
+              <p>Innowacyjne rozwiązania meblowe od 1971 roku. Pomagamy realizować projekty szybciej i wydajniej.</p>
+            </div>
+            <a href="#" class="manufacturer-link">Zobacz produkty →</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-2.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">O <span>Nas</span></h1>
-        <h2>Ambito Plus</h2>
-        <p>Witamy na naszej stronie!
-          Jesteśmy doświadczoną firmą zajmującą się wyspecjalizowaną sprzedażą akcesoriów meblowych i oświetlenia led. U nas kupisz produkty renomowanych producentów takich jak:
-          Blum
-          Peka
-          Amix
-          Design Light
-          Zobal
-          Hafele
-          Rejs
-          Aluprofil 
-          GTV
-          Zapewniamy fachowe doradztwo oraz kompleksową obsługę profesjonalnych stolarzy, projektantów, oraz osób które same chcą stworzyć własny mebel.</p>
-        <a href="#" class="cta">Strona Głowna</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-<style>
-  #order .order {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	width: 90%;
-}
-
-input, textarea {
-	width: 100%;
-	margin-bottom: 10px;
-	padding: 8px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-}
-label {
-	font-weight: bold;
-}
-
-#services .service-item {
-	transition: transform 0.3s ease; 
-}
-
-#services .service-item:hover {
-    transform: scale(1.05); 
-}
-
-#header .nav-bar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: 100%;
-	max-width: 1500px;
-	padding: 0 10px;
-
-}
-#contact .contact-item {
-margin-left: 35px;
-}
-
-iframe {
-  width: 100%; 
-  height: auto; 
-  border: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  iframe {
-    height: 250px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  iframe {
-    height: 300px;
-  }
-}
-
-</style>
-  <section id="order">
-    <div class="order container">
-      <div>
-        <h1 class="section-title">Złóż <span>Zamówienie</span></h1>
-      </div>
-      <form action="mail.php" method="post">
-        <h2>Dane Klienta:</h2>
-        <label for="name">Imię i nazwisko:</label>
-        <input type="text" id="name" name="name" required>
-    
-        <label for="company">Nazwa Firmy (jeśli dotyczy):</label>
-        <input type="text" id="company" name="company">
-    
-        <label for="phone">Telefon:</label>
-        <input type="tel" id="phone" name="phone" required>
-    
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-    
-        <h2>Zamówienie:</h2>
-        <textarea id="order_details" name="order_details" rows="5" required></textarea>
-    
-        <input type="submit" value="Złóż zamówienie">
-    </form>
-    
     </div>
   </section>
   
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about-us">
+    <div class="about-container">
+      <div class="about-content">
+        <div class="about-text">
+          <div class="section-header">
+            <h2 class="section-title">Poznaj <span>Ambito Plus</span></h2>
+            <p class="section-subtitle">Twojego partnera w akcesoriach meblowych</p>
+          </div>
+          
+          <div class="about-description">
+            <p>Jesteśmy doświadczoną firmą specjalizującą się w sprzedaży wysokiej jakości akcesoriów meblowych i oświetlenia LED. Od lat dostarczamy produkty, które pomagają tworzyć funkcjonalne i estetyczne meble.</p>
+            
+            <div class="partners-section">
+              <h3>Współpracujemy z najlepszymi:</h3>
+              <div class="partners-grid">
+                <div class="partner-item">Blum</div>
+                <div class="partner-item">Peka</div>
+                <div class="partner-item">Amix</div>
+                <div class="partner-item">Design Light</div>
+                <div class="partner-item">Zobal</div>
+                <div class="partner-item">Häfele</div>
+                <div class="partner-item">Rejs</div>
+                <div class="partner-item">Aluprofil</div>
+                <div class="partner-item">GTV</div>
+              </div>
+            </div>
+            
+            <p>Nasz zespół zapewnia fachowe doradztwo i kompleksową obsługę zarówno dla profesjonalnych stolarzy i projektantów, jak i dla osób tworzących meble we własnym zakresie.</p>
+          </div>
+          
+          <div class="about-cta">
+            <a href="#" class="cta-button">Skontaktuj się z nami</a>
+            <a href="#" class="secondary-button">Nasza oferta</a>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <div class="image-wrapper">
+            <img src="./img/img-2.png" alt="Zespół Ambito Plus">
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="order-form">
+  <div class="form-container">
+    <div class="form-header">
+      <h2 class="section-title">Złóż <span>Zamówienie</span></h2>
+      <p class="section-subtitle">Wypełnij formularz, a nasz zespół skontaktuje się z Tobą w celu potwierdzenia</p>
+    </div>
+
+    <form action="mail.php" method="post" class="order-form">
+      <div class="form-section">
+        <h3 class="form-section-title">Dane Klienta</h3>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Imię i nazwisko*</label>
+            <input type="text" id="name" name="name" required class="form-input">
+            <div class="input-border"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Nazwa Firmy</label>
+            <input type="text" id="company" name="company" class="form-input">
+            <div class="input-border"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefon*</label>
+            <input type="tel" id="phone" name="phone" required class="form-input">
+            <div class="input-border"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" required class="form-input">
+            <div class="input-border"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3 class="form-section-title">Szczegóły Zamówienia</h3>
+        <div class="form-group">
+          <label for="order_details">Opisz swoje zamówienie*</label>
+          <textarea id="order_details" name="order_details" rows="5" required class="form-textarea"></textarea>
+          <div class="input-border textarea-border"></div>
+        </div>
+      </div>
+
+      <div class="form-footer">
+        <p class="required-info">* Pola wymagane</p>
+        <button type="submit" class="submit-btn">
+          <span>Wyślij zamówienie</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+  
   <!-- Contact Section -->
   <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Informacje <span>Kontaktowe</span></h1>
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2 class="section-title">Skontaktuj się <span>z nami</span></h2>
+        <p class="section-subtitle">Jesteśmy do Twojej dyspozycji od poniedziałku do piątku w godzinach 8:00-16:00</p>
       </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Telefon</h1>
-            <h2>+48 504 228 296</h2>
+  
+      <div class="contact-content">
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img src="https://img.icons8.com/ios-filled/50/phone.png" alt="Telefon">
+            </div>
+            <div class="contact-details">
+              <h3>Telefon</h3>
+              <a href="tel:+48504228296">+48 504 228 296</a>
+            </div>
+          </div>
+  
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img src="https://img.icons8.com/ios-filled/50/email.png" alt="E-mail">
+            </div>
+            <div class="contact-details">
+              <h3>E-mail</h3>
+              <a href="mailto:biuro@ambitoplus.pl">biuro@ambitoplus.pl</a>
+            </div>
+          </div>
+  
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img src="https://img.icons8.com/ios-filled/50/map-marker.png" alt="Adres">
+            </div>
+            <div class="contact-details">
+              <h3>Adres</h3>
+              <address>
+                Żwirki i Wigury 13/15<br>
+                05-220 Zielonka<br>
+                Mazowieckie, Polska
+              </address>
+            </div>
           </div>
         </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Mail</h1>
-            <h2>biuro@ambitoplus.pl</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Adres</h1>
-            <h2>Żwirki i Wigury 13/15
-              Zielonka, Mazowieckie, 05-220
-              Polska</h2>
+  
+        <div class="contact-map">
+          <div class="map-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2439.8660767520105!2d21.14861731594704!3d52.30028516024091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf90ebd4df49%3A0x6349fe80a574e868!2sAMBITO%20PLUS!5e0!3m2!1sen!2spl!4v1669748722484!5m2!1sen!2spl" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-overlay"></div>
           </div>
         </div>
       </div>
     </div>
-    <center> <div class="iframe">
-      <div class="iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2439.8660767520105!2d21.14861731594704!3d52.30028516024091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf90ebd4df49%3A0x6349fe80a574e868!2sAMBITO%20PLUS!5e0!3m2!1sen!2spl!4v1669748722484!5m2!1sen!2spl" width="1280" height="300" style="border:0;top: 10%;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    </div>
-    </center>
   </section>
 
   <!-- End Contact Section -->
 
   <!-- Footer -->
   <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>A</span>mbito <span>P</span>lus</h1>
-      </div>
-      <h2>Hurtownia akcesoriów meblowych</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.facebook.com/profile.php?id=100063334773298" target="_blank" ><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h1 class="footer-logo"><span>A</span>mbito <span>P</span>lus</h1>
+          <p class="footer-tagline">Hurtownia akcesoriów meblowych</p>
         </div>
+  
+  <!--  <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=100063334773298" target="_blank" class="social-link">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png" alt="Facebook" class="social-icon">
+            <span class="social-text">Facebook</span>
+          </a>
+        </div> -->
+  
+        <div class="footer-links">
+          <a href="#" class="footer-link">Polityka prywatności</a>
+          <a href="#" class="footer-link">Regulamin</a>
+          <a href="#" class="footer-link">Kontakt</a>
         </div>
       </div>
-      <p style="text-align:center">Copyright © 2024 Ambito Plus. All rights reserved</p>
+  
+      <div class="footer-bottom">
+        <p class="copyright">Copyright © 2025 Ambito Plus. Wszelkie prawa zastrzeżone</p>
+      </div>
     </div>
-
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
