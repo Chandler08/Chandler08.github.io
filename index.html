@@ -1,181 +1,343 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <title>Kupczyk | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./img/logo.png" type="image/icon type">
+  <title>Ambito Plus</title>
 </head>
+
 <body>
-    <div class="social-media">
-        <a href="https://github.com/Chandler08" target="_blank" class="social-icon">
-            <i class="fab fa-github"></i> 
-        </a>
-        <a href="https://discordapp.com/users/953205955137523752" target="_blank" class="social-icon">
-            <i class="fab fa-discord"></i> 
-        </a>
-        <a href="https://www.twitter.com" target="_blank" class="social-icon">
-            <i class="fab fa-twitter"></i>
-        </a>
-    </div>
-    <header>
-        <div class="container">
-            <a class="logo" href="index.html">
-                <img class="logo__img" src="img/logo.svg" alt="logo">
-                <span class="logo__name" style="color: #E5E7EB;">Kupczyk</span>
-            </a>
-            <div class="nav">
-                <a href="#projects"><span>#</span>portfolio</a>
-                <a href="#about"><span>#</span>o-mnie</a>
-            </div>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>A</span>MBITO <span>P</span>LUS</h1>
+          </a>
         </div>
-    </header>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Strona Główna</a></li>
+            <li><a href="#services" data-after="Service">Produkty</a></li>
+            <li><a href="#projects" data-after="Projects">Producenci</a></li>
+            <li><a href="#about" data-after="About">O Nas</a></li>
+            <li><a href="#order" data-after="Order">Złóż Zamówienie</a></li>
+            <li><a href="#contact" data-after="Contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
 
-    <div class="container__content">
-        <section class="hero">
-            <div class="hero__content">
-                <h1 class="hero__title"><span>Frontend Developer</span> – Tworzę <span>nowoczesne strony</span> i <span>aplikacje internetowe</span></h1>
-                <div class="hero__description">Tworzę nowoczesne, responsywne i estetyczne interfejsy, łącząc design z funkcjonalnością w HTML, CSS i JavaScript.</div>
-            </div>
-        
-            <div class="working-on">
-                <h2>Aktualnie pracuję nad:</h2>
-                <p id="working-text">Pracuję nad nowoczesnym portfolio, które pokazuje moje umiejętności w tworzeniu stron i aplikacji internetowych. 🚀</p>
-            
-                <div id="progress-container">
-                    <div id="progress-bar"></div>
-                </div>
-                <p id="progress-text">Postęp: 0%</p>
-            </div> 
-        </section>
 
-        <section class="projects" id="projects">
-            <div class="projects__header">
-                <h2 class="h2">
-                    <span class="hash">#</span>portfolio
-                </h2>
-            </div>
-            <div class="projects__grid">
-                <div class="project-card">
-                    <img src="img/p1.png" alt="Portfolio1">
-                    <h3>Portfolio – Nowoczesna Strona Wizytówka</h3>
-                    <p>Responsywna i nowoczesna strona internetowa stworzona jako wizytówka moich umiejętności jako Frontend Developera. Strona prezentuje moje projekty, technologie, nad którymi pracuję, oraz zawiera sekcję "O mnie" i "Kontakt".</p>
-                    <a href="https://github.com/Chandler08/Chandler08.github.io" class="project-card__link"><i class="fa-brands fa-github fa-2xl"></i></i></a>
-                </div>
-                <div class="project-card">
-                    <img src="img/p2.png" alt="Projekt 2">
-                    <h3>Ambito Plus - Nowoczesna strona typu Landing Page</h3>
-                    <p>Strona stworzona dla marki Ambito Plus, zaprojektowana jako nowoczesny landing page z naciskiem na przejrzystość, responsywność i konwersję użytkowników. Projekt skupia się na czytelnej prezentacji oferty oraz intuicyjnej nawigacji.</p>
-                    <a href="ambitoplus.pl" class="project-card__link"><i class="fa-solid fa-globe fa-2xl"></i></i></a>
-                </div>
-           <!--    <div class="project-card">
-                    <img src="cwel.jfif" alt="Projekt 3">
-                    <h3>Projekt 3</h3>
-                    <p>Opis projektu...</p>
-                    <a href="#" class="project-card__link"><i class="fa-brands fa-github fa-2xl"></i></i></a>
-                </div>
-                --> 
-            </div>
-        </section>
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Witaj, </h1>
+        <h1>Na naszej </h1>
+        <h1>Stronie</h1>
+        <a href="#about" type="button" class="cta">O nas</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
 
-        <section id="skills" class="skills-section">
-            <h2 class="section-title">
-                <span class="hash">#</span>umiejętności
-            </h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <i class="fab fa-html5"></i>
-                    <p>HTML</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress html"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-css3-alt"></i>
-                    <p>CSS</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress css"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-js"></i>
-                    <p>JavaScript</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress js"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-react"></i>
-                    <p>React</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress react"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  
+  <!--End promo section-->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Prod<span>u</span>kty</h1>
+        <p>Nasza hurtownia oferuje akcesoria renomowanych producentów, najlepszej jakości
+          Akcesoria meblowe.
+          </p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/color/344/drawer.png" /></div>
+          <h2>Systemy szuflad</h2>
+          <p>Zróżnicowane potrzeby klientów wymagają produktów, 
+            które są do nich dostosowane. 
+            W ofercie posiadamy  systemy szuflad firmy Blum oraz Amix, odpowiadające na wszelkie potrzeby i 
+            wymagania w zakresie designu, funkcji czy też montażu.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/344/gear.png" /></div>
+          <h2>Prowadnice</h2>
+          <p> W zależności od potrzeb oferujemy system widocznych lub krytych prowadnic z dużym spektrum długości, rodzajów wysuwu i klas obciążenia od 30 do 100 kg. W przypadku prowadnic TANDEM posiadamy dwa systemy, BLUMOTION i TIP-ON BLUMOTION.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-led-home-improvements-flaticons-flat-flat-icons.png" /></div>
+          <h2>Oświetlenie</h2>
+          <p>Uzyskaj piękne efekty świetlne w domu. 
+            Staje się to coraz prostrze dzięki profilom i taśmą LED 
+            stworzysz przyjemny nastrój w każdym pomieszczeniu.
+          <br>
+          <br>
+          <br>
+          <br>
         
-        <section id="about">
-            <h2 class="section-title">
-                <span class="hash">#</span>o mnie
-            </h2>
-            <div class="about-content">
-                <div class="about-description">
-                    <p>Cześć! 👋 Nazywam się <strong>Kupczyk</strong> i jestem pasjonatem tworzenia <strong>nowoczesnych, responsywnych stron internetowych</strong>. Specjalizuję się w <strong>Frontend Development</strong>, gdzie łączę <strong>estetykę</strong> z <strong>funkcjonalnością</strong>, tworząc intuicyjne i dynamiczne interfejsy użytkownika.</p>
-                    <h3>💻 Technologie, z którymi pracuję:</h3>
-                    <ul>
-                        <li><strong>HTML, CSS, JavaScript</strong> – Podstawy mojej codziennej pracy</li>
-                        <li><strong>React.js</strong> – Tworzę dynamiczne aplikacje internetowe</li>
-                        <li><strong>Git/GitHub</strong> – Wersjonowanie kodu i współpraca zespołowa</li>
-                    </ul>
-                    <h3>📌 Dlaczego programowanie?</h3>
-                    <p>Zawsze fascynowała mnie możliwość tworzenia czegoś z niczego – kod zamieniający się w interaktywne strony i aplikacje to dla mnie magia! Uwielbiam wyzwania i nieustannie rozwijam swoje umiejętności, ucząc się nowych technologii i narzędzi.</p>
-                    <h3>🚀 Poza kodowaniem...</h3>
-                    <p>Po godzinach pasjonuję się <strong>designem UI/UX</strong> oraz gamingiem. Kiedy nie siedzę przy programowaniu, można mnie znaleźć na siłowni albo przy dobrym serialu na netflixie.</p>
-                    </div>
-            </div>
-        </section>
-        
-        <section id="contact">
-            <div class="contact-container">
-                <h2 class="section-title"><span class="hash">#</span>kontakt</h2>
-                <p class="contact-description">Masz pytania? Skontaktuj się ze mną przez e-mail lub Discord.</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:twojemail@example.com">kupczyk005@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-discord"></i>
-                        <span>kyzcpuk</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
+        </p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/external-others-pike-picture/344/external-Hidden-Hinges-doors-others-pike-picture.png" /></div>
+          <h2>System zawiasów</h2>
+          <p>Krótka droga nasuwu gwarantuje prosty montaż frontu do korpusu, a możliwość regulacji w 3 wymiarach pozwala osiągnąć precyzyjny układ szczelin. Zintegrowana blokada wyjęcia dba o to, by drzwi cały czas pozostały bezpiecznie na miejscu.<BR><BR></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"> <span>Producenci</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Blum</h1>
+            <p>
+            Naszym celem są wysokiej jakości okucia meblowe, które sprawiają, że mieszka się wygodniej. Produkujemy systemy podnośników, zawiasów i szuflad oraz rozwiązania kieszeniowe do mebli, a naszą ofertę uzupełniają serwisy i pomoce montażowe.
+            </p>
+          </div>
+          <div class="project-img">
+            <img src="./img/blum.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Amix</h1>
+            <p>Szeroka gama produktów a także stała dostępność towaru sprawia iż jesteśmy wiarygodnym i konkurencyjnym kontrahentem. Naszym głównym celem jest zapewnienie odbiorcom towaru najwyższej jakości w stosunkowo niskiej cenie.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/amix.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Design Light</h1>
+            <p>Specjalizujemy się w produkcji oświetlenia do mebli i mieszkań.
+
+              Przedmiotem działalności firmy jest funkcjonalne i energooszczędne oświetlenie LED, w które zaopatrujemy największe hurtownie meblowe w Polsce oraz za granicą, klientów biznesowych, jak i indywidualnych.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/designlight.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Zobal</h1>  
+            <p>Podstawową działalnością naszej firmy jest produkcja wysokiej jakości akcesoriów do mebli z aluminium. W ofercie znajdziecie Państwo ponad dwadzieścia wzorów frontów do mebli z proﬁli aluminiowych uzupełnionych szeroką gamą szkła ornamentowego, kolorowego oraz szkła z graﬁką.
+
+              uchwyty wpuszczane w wielu kształtach i kolorach, które jako jedyni na rynku możemy zaoferować wykonane na wymiar i wykończone jako detal. Paletę nowoczesnych rozwiązań uzupełnia System Ścienny, panel LED, rolety aluminiowe, System Bezuchwytowy w kilku wariantach konstrukcyjnych i funkcjonalnych.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/zobal.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Hafele</h1>
+            <p>Z nami zrealizujesz każdy projekt. Nieprzerwanie pracujemy nad nowymi rozwiązaniami, a stare ulepszamy. Wszystko po to, by nasi partnerzy mogli realizować swoje pomysły szybciej, wydajniej i bardziej pomysłowo. Nasz wyjątkowy asortyment znajduje się w Wielkim Katalogu Häfele – najważniejszej publikacji rynku okuć od 1971 roku.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/hafele.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/img-2.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">O <span>Nas</span></h1>
+        <h2>Ambito Plus</h2>
+        <p>Witamy na naszej stronie!
+          Jesteśmy doświadczoną firmą zajmującą się wyspecjalizowaną sprzedażą akcesoriów meblowych i oświetlenia led. U nas kupisz produkty renomowanych producentów takich jak:
+          Blum
+          Peka
+          Amix
+          Design Light
+          Zobal
+          Hafele
+          Rejs
+          Aluprofil 
+          GTV
+          Zapewniamy fachowe doradztwo oraz kompleksową obsługę profesjonalnych stolarzy, projektantów, oraz osób które same chcą stworzyć własny mebel.</p>
+        <a href="#" class="cta">Strona Głowna</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+<style>
+  #order .order {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+input, textarea {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+label {
+	font-weight: bold;
+}
+
+#services .service-item {
+	transition: transform 0.3s ease; 
+}
+
+#services .service-item:hover {
+    transform: scale(1.05); 
+}
+
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1500px;
+	padding: 0 10px;
+
+}
+#contact .contact-item {
+margin-left: 35px;
+}
+
+iframe {
+  width: 100%; 
+  height: auto; 
+  border: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  iframe {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  iframe {
+    height: 300px;
+  }
+}
+
+</style>
+  <section id="order">
+    <div class="order container">
+      <div>
+        <h1 class="section-title">Złóż <span>Zamówienie</span></h1>
+      </div>
+      <form action="mail.php" method="post">
+        <h2>Dane Klienta:</h2>
+        <label for="name">Imię i nazwisko:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="company">Nazwa Firmy (jeśli dotyczy):</label>
+        <input type="text" id="company" name="company">
+    
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <h2>Zamówienie:</h2>
+        <textarea id="order_details" name="order_details" rows="5" required></textarea>
+    
+        <input type="submit" value="Złóż zamówienie">
+    </form>
+    
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Informacje <span>Kontaktowe</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Telefon</h1>
+            <h2>+48 504 228 296</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Mail</h1>
+            <h2>biuro@ambitoplus.pl</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Adres</h1>
+            <h2>Żwirki i Wigury 13/15
+              Zielonka, Mazowieckie, 05-220
+              Polska</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <center> <div class="iframe">
+      <div class="iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2439.8660767520105!2d21.14861731594704!3d52.30028516024091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf90ebd4df49%3A0x6349fe80a574e868!2sAMBITO%20PLUS!5e0!3m2!1sen!2spl!4v1669748722484!5m2!1sen!2spl" width="1280" height="300" style="border:0;top: 10%;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    </center>
+  </section>
+
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>A</span>mbito <span>P</span>lus</h1>
+      </div>
+      <h2>Hurtownia akcesoriów meblowych</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/profile.php?id=100063334773298" target="_blank" ><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        </div>
+      </div>
+      <p style="text-align:center">Copyright © 2024 Ambito Plus. All rights reserved</p>
     </div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <p>&copy; 2025 Kupczyk. Wszystkie prawa zastrzeżone.</p>
-            </div>
-            <div class="footer-right">
-                <div class="social-media-footer">
-                    <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Chandler08" class="social-icon"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    </footer>
-    
-
-    <script src="script/script.js"></script>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
 </body>
+
 </html>
