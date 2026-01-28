@@ -76,6 +76,24 @@ body {
     overflow-x: hidden;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary-light);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -102,6 +120,88 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+/* ==========================================
+   SHOP ANNOUNCEMENT BAR
+   ========================================== */
+
+.shop-announcement {
+    background: linear-gradient(90deg, var(--color-dark) 0%, var(--color-gray-900) 100%);
+    color: var(--color-white);
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px solid var(--color-gray-800);
+    transition: all var(--transition-base);
+    height: auto;
+    opacity: 1;
+}
+
+.navbar.scrolled .shop-announcement {
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.announcement-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.badge-new {
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    animation: pulse 2s infinite;
+}
+
+.announcement-link {
+    color: var(--color-accent-light);
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    transition: all var(--transition-fast);
+}
+
+.announcement-link:hover {
+    color: var(--color-white);
+    transform: translateX(4px);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.4);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(229, 57, 53, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(229, 57, 53, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .announcement-content {
+        gap: var(--spacing-xs);
+        font-size: 0.8rem;
+    }
+}
+
 .nav-content {
     display: flex;
     align-items: center;
@@ -117,6 +217,8 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-size: 1.5rem;
+    position: relative;
+    z-index: 1010;
 }
 
 .logo i {
@@ -166,6 +268,65 @@ body {
     width: 100%;
 }
 
+.nav-shop-item {
+    margin-left: var(--spacing-md);
+}
+
+.nav-btn-shop {
+    background: var(--color-primary);
+    color: var(--color-white) !important;
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    transition: all var(--transition-base);
+    box-shadow: 0 4px 12px rgba(166, 27, 27, 0.2);
+}
+
+.nav-btn-shop:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(229, 57, 53, 0.3);
+}
+
+.nav-btn-shop {
+    animation: shopPulse 3s infinite;
+}
+
+@keyframes shopPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.nav-btn-shop i {
+    color: var(--color-white) !important;
+}
+
+@media (max-width: 1024px) {
+    .nav-shop-item {
+        margin-left: 0;
+        width: 100%;
+        padding: var(--spacing-sm) 0;
+    }
+
+    .nav-btn-shop {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -174,6 +335,8 @@ body {
     border: none;
     cursor: pointer;
     padding: var(--spacing-xs);
+    position: relative;
+    z-index: 1010;
 }
 
 .mobile-menu-toggle span {
@@ -192,7 +355,8 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 140px;
+    /* Increased to account for announcement bar */
     overflow: hidden;
 }
 
@@ -450,7 +614,7 @@ section {
     transform: translateY(-8px);
     background-color: var(--color-white);
     border-color: var(--color-accent);
-    box-shadow: var(--shadow-xl);
+    box-shadow: 0 20px 40px rgba(166, 27, 27, 0.15);
 }
 
 .about-icon {
@@ -508,7 +672,7 @@ section {
 .offer-card:hover {
     transform: translateY(-8px);
     border-color: var(--color-accent);
-    box-shadow: var(--shadow-xl);
+    box-shadow: 0 20px 40px rgba(166, 27, 27, 0.15);
 }
 
 .offer-icon {
@@ -544,22 +708,22 @@ section {
    ========================================== */
 
 .why-us {
-    background-color: var(--color-dark);
-    color: var(--color-white);
+    background-color: var(--color-gray-100);
+    color: var(--color-gray-800);
 }
 
 .why-us .section-badge {
-    background-color: rgba(166, 27, 27, 0.2);
-    border-color: rgba(166, 27, 27, 0.3);
-    color: var(--color-accent);
+    background-color: rgba(166, 27, 27, 0.08);
+    border-color: rgba(166, 27, 27, 0.2);
+    color: var(--color-primary);
 }
 
 .why-us .section-title {
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 .why-us .section-subtitle {
-    color: var(--color-gray-400);
+    color: var(--color-gray-600);
 }
 
 .why-grid {
@@ -596,7 +760,7 @@ section {
 .why-card:hover {
     transform: translateY(-8px);
     border-color: var(--color-accent);
-    box-shadow: 0 20px 40px rgba(166, 27, 27, 0.2);
+    box-shadow: 0 20px 40px rgba(166, 27, 27, 0.1);
 }
 
 .why-number {
@@ -605,7 +769,7 @@ section {
     right: var(--spacing-md);
     font-size: 4rem;
     font-weight: 800;
-    color: rgba(166, 27, 27, 0.1);
+    color: rgba(166, 27, 27, 0.05);
     line-height: 1;
 }
 
@@ -629,13 +793,18 @@ section {
 .why-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-dark);
     margin-bottom: var(--spacing-sm);
 }
 
 .why-card p {
-    color: var(--color-gray-400);
+    color: var(--color-gray-600);
     line-height: 1.7;
+}
+
+.why-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
 }
 
 /* ==========================================
@@ -730,6 +899,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);
+    justify-content: space-between;
+    /* Balance with form height */
 }
 
 .contact-card {
@@ -864,6 +1035,10 @@ section {
     margin-bottom: var(--spacing-md);
 }
 
+.footer-logo .logo-text {
+    color: var(--color-white);
+}
+
 .footer-logo i {
     color: var(--color-accent);
 }
@@ -927,6 +1102,72 @@ section {
     font-size: 0.875rem;
 }
 
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.footer-links a {
+    color: var(--color-gray-400);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--color-accent-light);
+}
+
+.footer-shop-link {
+    color: var(--color-accent) !important;
+    font-weight: 700;
+}
+
+/* ==========================================
+   FLOATING ACTION BUTTON (FAB)
+   ========================================== */
+
+.fab-contact {
+    position: fixed;
+    bottom: var(--spacing-lg);
+    right: var(--spacing-lg);
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    /* WhatsApp Green or Phone Color */
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    color: var(--color-white);
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(166, 27, 27, 0.4);
+    z-index: 999;
+    transition: all var(--transition-base);
+}
+
+.fab-contact:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(166, 27, 27, 0.5);
+}
+
+.fab-text {
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+    .fab-contact {
+        padding: 12px;
+        bottom: var(--spacing-md);
+        right: var(--spacing-md);
+    }
+
+    .fab-text {
+        display: none;
+    }
+}
+
 /* ==========================================
    ANIMATIONS
    ========================================== */
@@ -974,10 +1215,12 @@ section {
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        top: 70px;
+        top: 0;
+        padding-top: 120px;
+        /* Account for navbar + announcement */
         left: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+        height: 100vh;
         background-color: var(--color-white);
         flex-direction: column;
         padding: var(--spacing-xl);
