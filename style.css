@@ -661,12 +661,14 @@ section {
 }
 
 .offer-card {
+    position: relative;
     padding: var(--spacing-xl);
     background-color: var(--color-white);
     border-radius: var(--radius-lg);
     border: 2px solid var(--color-gray-200);
     transition: all var(--transition-base);
     text-align: center;
+    overflow: hidden;
 }
 
 .offer-card:hover {
@@ -675,20 +677,22 @@ section {
     box-shadow: 0 20px 40px rgba(166, 27, 27, 0.15);
 }
 
-.offer-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto var(--spacing-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-primary);
+.offer-number {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgba(166, 27, 27, 0.05);
+    line-height: 1;
+    z-index: 0;
+    pointer-events: none;
     transition: all var(--transition-base);
 }
 
-.offer-card:hover .offer-icon {
-    transform: scale(1.15);
-    color: var(--color-accent);
+.offer-card:hover .offer-number {
+    transform: scale(1.1);
+    color: rgba(166, 27, 27, 0.1);
 }
 
 .offer-card h3 {
