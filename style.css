@@ -1213,6 +1213,56 @@ section {
 }
 
 /* ==========================================
+   PARTNERS SECTION
+   ========================================== */
+
+.partners {
+    background-color: var(--color-white);
+    padding: var(--spacing-3xl) 0;
+    border-top: 1px solid var(--color-gray-100);
+}
+
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl) var(--spacing-3xl);
+    padding: var(--spacing-xl) 0;
+}
+
+.partner-item {
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-gray-300);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all var(--transition-base);
+    cursor: default;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+}
+
+.partner-item:hover {
+    color: var(--color-primary);
+    transform: translateY(-5px) scale(1.05);
+    text-shadow: 0 10px 20px rgba(166, 27, 27, 0.1);
+}
+
+@media (max-width: 768px) {
+    .partners-grid {
+        gap: var(--spacing-lg);
+    }
+
+    .partner-item {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* ==========================================
    RESPONSIVE DESIGN
    ========================================== */
 
