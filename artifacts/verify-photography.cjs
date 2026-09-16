@@ -7,7 +7,7 @@ const context=await browser.newContext();const page=await context.newPage();cons
 page.on('pageerror',e=>errors.push(e.message));
 await page.goto('http://127.0.0.1:4173');
 assert.equal(await page.locator('.product-photo img').count(),0);
-assert.equal(await page.locator('.product-art').count(),0); assert.equal(await page.locator('.product-symbol').count(),13);
+assert.equal(await page.locator('.product-art').count(),0); assert.equal(await page.locator('.product-symbol').count(),0);
 await page.locator('img[src]').evaluateAll(imgs=>Promise.all(imgs.map(i=>{i.loading='eager';return i.decode().catch(()=>{throw new Error(i.src)})})));
 for(const [width,height,label] of [[1440,1000,'desktop'],[390,844,'mobile']]){
  await page.setViewportSize({width,height});

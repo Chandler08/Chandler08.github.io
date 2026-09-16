@@ -36,8 +36,8 @@ maximum rendered width of 480 CSS pixels. Its EXIF-oriented dimensions are
 Inspiration uses customer photo 26 in a full 4:3 frame beside the section copy.
 All 22 original photographs remain in the gallery.
 
-Products intentionally contain no photographs. Thirteen warm beige catalogue
-panels combine small decorative line symbols, a family label, product name,
+Products intentionally contain no photographs or decorative symbols. Thirteen warm beige catalogue
+panels combine a family label, product name,
 description and enquiry link. Use two columns on desktop and one on mobile.
 Preserve filters and the five mosquito-screen variants: ramkowe, drzwiowe,
 przesuwne, rolowane, plisowane. Each enquiry names the corresponding variant.
