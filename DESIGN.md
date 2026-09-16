@@ -34,3 +34,10 @@ blind card uses an explicitly labeled AI illustration because that product is
 not represented in the supplied photographs. Its PNG master and optimized WebP
 are in `images/products/`. `scripts/update-site-photography.py` maintains these
 image slots. All 22 original photos remain in the gallery.
+
+Mosquito screens have five catalogue cards: ramkowe, drzwiowe, przesuwne,
+rolowane and plisowane, all under the existing `moskitiery` filter. Each enquiry
+link names its specific variant. Frame and door cards use photos 22 and 24.
+The other three use photo 23 as an explicitly labeled mesh detail, not as
+evidence of their mechanisms; replace with matching installation photos when
+available. `scripts/update-mosquito-screens.py` maintains these cards.
