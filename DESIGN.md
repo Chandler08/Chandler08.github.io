@@ -28,19 +28,21 @@ markup (Pillow). `scripts/prepare-logo.py` rebuilds SVGs (fontTools).
 The desktop `atelierolet` source project was consulted but not modified.
 Future full Vite builds must carry these additions into their source inputs.
 
-## Site photography
+## Site photography and catalogue
 
-Hero: customer photo 5, daylight through horizontal blinds. Inspiration: customer
-photo 26, a corner window, shown in its full 4:3 frame beside the section copy.
-Product cards use photos 7, 19, 11, 0, 15, 22, 20 and 12. The standard roller
-blind card uses an explicitly labeled AI illustration because that product is
-not represented in the supplied photographs. Its PNG master and optimized WebP
-are in `images/products/`. `scripts/update-site-photography.py` maintains these
-image slots. All 22 original photos remain in the gallery.
+The hero uses original customer JPEG 5, with its full portrait frame and a
+maximum rendered width of 480 CSS pixels. Its EXIF-oriented dimensions are
+480 ? 640; never crop or stretch it into the former large square hero.
+Inspiration uses customer photo 26 in a full 4:3 frame beside the section copy.
+All 22 original photographs remain in the gallery.
 
-Mosquito screens have five catalogue cards: ramkowe, drzwiowe, przesuwne,
-rolowane and plisowane, all under the existing `moskitiery` filter. Each enquiry
-link names its specific variant. Frame and door cards use photos 22 and 24.
-The other three use photo 23 as an explicitly labeled mesh detail, not as
-evidence of their mechanisms; replace with matching installation photos when
-available. `scripts/update-mosquito-screens.py` maintains these cards.
+Products intentionally contain no photographs. Thirteen warm beige catalogue
+panels combine small decorative line symbols, a family label, product name,
+description and enquiry link. Use two columns on desktop and one on mobile.
+Preserve filters and the five mosquito-screen variants: ramkowe, drzwiowe,
+przesuwne, rolowane, plisowane. Each enquiry names the corresponding variant.
+
+`scripts/update-product-catalogue.py` maintains the photo-free presentation.
+`scripts/update-mosquito-screens.py` rebuilds variants then applies that style.
+`scripts/update-site-photography.py` only updates hero and inspiration.
+Old product photo files are retained as unused assets, not shown in the catalogue.

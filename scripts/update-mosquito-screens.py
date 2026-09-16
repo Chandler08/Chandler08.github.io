@@ -45,3 +45,5 @@ html = re.sub(pattern, '', html, flags=re.S)
 html = html[:first] + '\n'.join(cards) + html[first:]
 page.write_text(html, encoding='utf-8')
 print('Updated five mosquito-screen variants.')
+import runpy
+runpy.run_path(str(root / 'scripts/update-product-catalogue.py'))
