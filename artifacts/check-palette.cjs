@@ -1,0 +1,2 @@
+﻿const {chromium}=require('C:/Users/kupie/Desktop/atelierolet/node_modules/@playwright/test');
+(async()=>{const browser=await chromium.launch({headless:true,channel:'chrome'});const page=await browser.newPage({viewport:{width:1440,height:1000}});await page.goto('http://127.0.0.1:4173');await page.evaluate(()=>window.scrollTo({top:document.body.scrollHeight,behavior:'instant'}));await page.screenshot({path:'artifacts/footer-warm-palette.png'});console.log(await page.locator('.contact-section').evaluate(el=>getComputedStyle(el).backgroundColor));await browser.close()})();

@@ -3,8 +3,11 @@
 Public Polish-language brand site for window coverings in Radom and nearby areas.
 
 Preserve the established Manrope / DM Sans typography and warm, quiet palette:
-canvas `#faf9f6`, ink `#292e29`, muted `#606357`, linen `#e9e4da`, accent `#77613c`.
-Existing tokens are defined in the original stylesheet in `assets/`.
+canvas `#faf9f6`, ink `#332e28`, muted `#6a6054`, linen `#e9e4da`, accent `#77613c`, line `#ddd5c8`.
+The warm palette overrides the original tokens in `assets/atelier.css`.
+Use brown and beige undertones throughout, including contact, footer, buttons
+and gallery overlays. The primary logo and favicon share the bronze accent
+`#77613c`; avoid green-tinted charcoal in brand assets and interface surfaces.
 
 The new identity uses an open window frame with progressively shorter horizontal
 slats, suggesting a raised blind and incoming light. The Manrope wordmark is

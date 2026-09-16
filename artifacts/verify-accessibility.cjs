@@ -13,7 +13,7 @@ await p.locator('.gallery-photo:visible img').evaluateAll(imgs=>Promise.all(imgs
 await p.evaluate(()=>window.scrollTo({top:document.querySelector('#realizacje').offsetTop-24,behavior:'instant'}));
 await p.screenshot({path:`artifacts/${name}-gallery.png`});
 }
-let audit=await new AxeBuilder({page:p}).include('#realizacje').include('.site-header').analyze();
+let audit=await new AxeBuilder({page:p}).include('#realizacje').include('.site-header').include('.contact-section').include('.site-footer').analyze();
 assert.deepEqual(audit.violations.map(v=>v.id),[]);
 await p.locator('.gallery-open').first().click();
 audit=await new AxeBuilder({page:p}).include('.gallery-dialog').analyze();
@@ -28,5 +28,6 @@ await logo.screenshot({path:'images/brand/atelier-rolet.png',omitBackground:true
 await browser.close();
 console.log('PASS: axe header/gallery/modal, no-JS 22 photo links, desktop/mobile visual checks; transparent PNG exported.');
 })();
+
 
 

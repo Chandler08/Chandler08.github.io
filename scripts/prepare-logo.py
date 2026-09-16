@@ -25,9 +25,9 @@ mark = '<path d="M8 64V12h38v52M8 12h38M8 23h38M8 34h38M8 45h25M8 56h14" fill="n
 letters = lettering('atelier', 65, 46, 42, -1.2) + lettering('ROLET', 68, 65, 10.5, 5.2)
 dest = root / 'images/brand'
 dest.mkdir(exist_ok=True)
-for name, color in [('atelier-rolet', '#292e29'), ('atelier-rolet-light', '#faf9f6')]:
+for name, color in [('atelier-rolet', '#77613c'), ('atelier-rolet-light', '#faf9f6')]:
     svg = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 80" role="img" aria-labelledby="title"><title id="title">Atelier Rolet</title><g color="{color}" fill="{color}">{mark}{letters}</g></svg>'
     (dest / f'{name}.svg').write_text(svg, encoding='utf-8')
-(dest / 'atelier-rolet-symbol.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 76" color="#292e29">{mark}</svg>', encoding='utf-8')
-(root / 'favicon.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76"><rect width="76" height="76" rx="12" fill="#292e29"/><g transform="translate(11 0)" color="#faf9f6">{mark}</g></svg>', encoding='utf-8')
+(dest / 'atelier-rolet-symbol.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 76" color="#77613c">{mark}</svg>', encoding='utf-8')
+(root / 'favicon.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76"><rect width="76" height="76" rx="12" fill="#77613c"/><g transform="translate(11 0)" color="#faf9f6">{mark}</g></svg>', encoding='utf-8')
 print('Created primary, reversed, symbol and favicon SVGs.')

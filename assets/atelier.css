@@ -1,3 +1,10 @@
+:root {
+  --ink: #332e28;
+  --muted: #6a6054;
+  --line: #ddd5c8;
+  --accent: #77613c;
+  --primary: var(--ink);
+}
 .brand .brand-logo { width: 174px; height: auto; display: block; }
 .hero-visual img { object-position: center; }
 .product-photo { position: relative; overflow: hidden; border-radius: var(--radius); background: var(--linen); aspect-ratio: 4 / 5; }
@@ -25,13 +32,13 @@
 .gallery-more:hover { background: var(--ink); color: var(--canvas); }
 .gallery-more:active { transform: translateY(1px); }
 .gallery-modal-open { overflow: hidden; }
-.gallery-dialog { max-width: none; max-height: none; width: min(1120px, 96vw); height: min(920px, 94dvh); padding: 0; border: 0; background: #20241f; color: #faf9f6; border-radius: 4px; margin: auto; }
-.gallery-dialog::backdrop { background: rgb(15 19 15 / 88%); }
+.gallery-dialog { max-width: none; max-height: none; width: min(1120px, 96vw); height: min(920px, 94dvh); padding: 0; border: 0; background: #29241e; color: var(--canvas); border-radius: 4px; margin: auto; }
+.gallery-dialog::backdrop { background: rgb(25 21 16 / 88%); }
 .gallery-viewer { height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; padding: 16px 24px; gap: 12px; }
 .gallery-toolbar, .gallery-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.gallery-dialog button { min-width: 48px; min-height: 48px; border: 1px solid #70766b; background: transparent; color: inherit; font: inherit; border-radius: 3px; padding: 8px 14px; cursor: pointer; }
-.gallery-dialog button:hover { background: #3c4238; }
-.gallery-dialog button:active { background: #505749; }
+.gallery-dialog button { min-width: 48px; min-height: 48px; border: 1px solid #887966; background: transparent; color: inherit; font: inherit; border-radius: 3px; padding: 8px 14px; cursor: pointer; }
+.gallery-dialog button:hover { background: #44392d; }
+.gallery-dialog button:active { background: #584a3a; }
 .gallery-stage { min-height: 0; display: grid; place-items: center; }
 .gallery-full { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
 .gallery-bottom p { text-align: center; margin: 0; font-size: 14px; }
