@@ -1,4 +1,16 @@
 .brand .brand-logo { width: 174px; height: auto; display: block; }
+.hero-visual img { object-position: center; }
+.product-photo { position: relative; overflow: hidden; border-radius: var(--radius); background: var(--linen); aspect-ratio: 4 / 5; }
+.product-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.product-photo-note { position: absolute; bottom: 12px; left: 12px; padding: 5px 9px; font-size: 11px; line-height: 1.4; color: var(--ink); background: var(--canvas); border-radius: 2px; }
+.inspiration-section { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 64px; align-items: center; }
+.inspiration-section .section-heading { margin-bottom: 0; }
+.inspiration-visual img { display: block; aspect-ratio: 4 / 3; object-position: center; }
+@media (max-width: 760px) {
+  .inspiration-section { grid-template-columns: 1fr; gap: 28px; }
+  .inspiration-visual img { aspect-ratio: 4 / 3; }
+  .product-photo { aspect-ratio: 1; }
+}
 .gallery-grid { gap: 32px 24px; }
 .gallery-photo { margin: 0; min-width: 0; }
 .gallery-open { display: block; position: relative; overflow: hidden; background: var(--linen); border-radius: 3px; }
